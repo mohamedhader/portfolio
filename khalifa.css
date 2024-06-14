@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,#071952,#0B666A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    height: 80%;
+    width: 80%;
+    background-color: #0B666A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -10px #0a6166;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.logo{
+    font-size: 17px;
+    color: white;
+    padding: 10px;
+}
+ul{
+    color: #b7f7ec;
+    list-style: none;
+}
+main li{
+    display: inline;
+    margin: 20px;
+    font-size: 17px;
+    padding: 20px;
+    
+    transition: 0.8s;
+}
+main ul a:hover{
+    border-bottom: 1px solid #00ffd5;
+    color: #00ffd5;
+}
+main ul a{
+    text-decoration: none; 
+    padding-bottom: 5px;
+}
+article{
+    position: absolute;
+    left: 70px;
+    top: 210px;
+    color: white;
+    font-size: 25px;
+}
+h5{
+    font-size: 24px;
+}
+h1{
+    color: #00ffd5;
+    margin: 10px;
+    margin-left: 0px;
+    font-size: 44px;
+}
+p{
+    margin: 0px;
+}
+.d{
+    margin-top: 0px;
+}
+input{
+    width: 165px;
+    height: 45px;
+    border-radius: 7px;
+    background-color: #0a2060;
+    font-size: 14px;
+    border: none;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 50px;
+    transition: 0.7s;
+}
+input:hover{
+    background-color: #05439b;
+    transform: scale(1.19);
+
+}
+main img{
+    height: 330px;
+    width: 330px;
+    position: absolute;
+    bottom: 100px;
+    right: 105px;
+    border-radius: 50%;
+    border: 5px #00ffd5 double;
+}
+.Projects{
+    height: 150%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,#071952,#0B666A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .fa-brands, main .fa-solid{
+    color: #00ffd5;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #00ffd5;
+    margin: 5px;
+    translate: 70px 1610%;
+    font-size: 18px;
+}
+.Projects ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 47px;
+}
+.Projects li{
+    height: 290px;
+    width: 242px;
+    background-color: #0B666A;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: 0.8s;
+    box-shadow: 0px 0px 15px 1px #11443cae;
+    position: relative;
+}
+.Projects li:hover{
+    transform: scale(1.1);
+}
+.Projects img{
+    height: 230px;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+.Projects p{
+    font-size: 16.5px;
+    color: #ffffff;
+    font-weight: 600;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.Projects span{
+    font-size: 12px;
+    color: #00ffd5;
+    font-weight: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 0px;
+}
+.Projects .fa-solid{
+    font-weight: 900;
+    position: absolute;
+    bottom: 19px;
+    left: 200px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.contact{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,#071952,#0B666A); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #00ffd5;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.85s;
+}
+.main_contact{
+    height: 80%;
+    width: 80%;
+    background-color: #0B666A;
+    position: relative;
+}
+.main_contact .get{
+    font-size: 48px;
+    margin: 0px 50%;
+    translate: -50% 0;
+}
+@media(max-width:412px){
+    main{
+        background-color: transparent;
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+        margin-left: 15px;
+    }
+    main ul{
+        display: none;
+    }
+ 
+    main li{
+        display: block;
+        padding: 5px;
+    }
+    main img{
+        height: 150px;
+        width: 150px;
+        left: 10px;
+        top:  35px;
+        border-width: 2px;
+    }
+    article{
+        position: absolute;
+        left: 20px;
+        top: 310px;
+    }
+    h5{
+        position: relative;
+        top: -70px;
+        font-weight: 600;
+    }
+    h1{
+        position: relative;
+        top: -60px;
+    }
+    p{
+        position: relative;
+        top: -10px;
+    }
+    input{
+        margin-top: 47px;
+    }
+    main i.fa-brands,i.fa-envelope{
+        translate: 25px 2160%;
+    }
+    .logo{
+        display: none;
+    }
+    .d{
+        margin-top: -30px;
+    }  
+    .Projects{
+        height: 500%;
+    }
+    .Projects ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Projects li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        position: relative;
+    }
+    .Projects p{
+        position: absolute;
+        top: 232px;
+        left: 10px;
+    }
+    .Projects .fa-solid{
+        translate: 1px -7px;
+    }
+    .main_contact .fa-arrow-up{
+        translate: 0px 0%;
+    }
+}
